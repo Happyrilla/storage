@@ -1,6 +1,6 @@
 import { viteStaticCopy } from "vite-plugin-static-copy";
 
-const basePath = process.env.SCRAMJET_BASE_PATH || "./";
+const basePath = process.env.SCRAMJET_BASE_PATH || "/";
 
 export default {
 	base: basePath,
