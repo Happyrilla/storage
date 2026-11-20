@@ -41,22 +41,12 @@
         <script type="text/javascript" src="js/rpg_windows.js"></script>
         <script type="text/javascript" src="js/plugins.js"></script>
         <script type="text/javascript">
-            // Keep RPG Maker MV's fixed 816x624 coordinate system, but make the
-            // canvas stretch responsively inside a desktop browser too.
-            window.addEventListener('load', function () {
-                if (typeof Graphics === 'undefined') return;
-
-                Graphics._stretchEnabled = true;
-                if (typeof Graphics._updateAllElements === 'function') {
-                    Graphics._updateAllElements();
-                }
-
-                window.addEventListener('resize', function () {
-                    if (typeof Graphics._updateAllElements === 'function') {
-                        Graphics._updateAllElements();
-                    }
-                });
-            });
+            // Enable RPG Maker MV's built-in proportional viewport scaling before
+            // Graphics.initialize runs. It keeps the game's original resolution
+            // and scales the complete screen down to fit smaller browser windows.
+            Graphics._defaultStretchMode = function () {
+                return true;
+            };
         </script>
         <script type="text/javascript" src="js/main.js"></script>
     </body>
