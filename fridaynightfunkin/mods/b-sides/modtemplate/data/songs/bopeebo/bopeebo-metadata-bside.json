@@ -1,0 +1,27 @@
+{
+  "version": "2.2.4",
+  "songName": "Bopeebo B-Side",
+  "artist": "JADS",
+  "charter": "Fabs + Spazkid",
+  "playData": {
+    "difficulties": ["hard"],
+    "characters": {
+      "player": "bf-b",
+      "girlfriend": "gf-b",
+      "opponent": "dad-b",
+      "instrumental": "bside",
+      "altInstrumentals": []
+    },
+    "stage": "mainStage",
+    "noteStyle": "funkin",
+    "ratings": { "hard": 4 },
+    "album": "volume1",
+    "previewStart": 0,
+    "previewEnd": 15000
+  },
+  "generatedBy": "Friday Night Funkin' - v0.5.0 (runners-fixins-v2:b962c1a) PROTOTYPE",
+  "timeFormat": "ms",
+  "timeChanges": [
+    { "t": 0, "b": 0, "bpm": 100, "n": 4, "d": 4, "bt": [4, 4, 4, 4] }
+  ]
+}
